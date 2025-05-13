@@ -6,6 +6,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FazanaChat2.WebClient", "Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FazanaChat2.DesktopClient", "FazanaChat2.DesktopClient\FazanaChat2.DesktopClient.csproj", "{9B66D08D-2E6F-4A0B-8892-CA974E5AF4EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{C318B2BD-F298-4EE9-AAB8-5DFC27A9154C}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleChat", "ConsoleChat", "{3F3BB68E-27E0-4B5B-B1B5-13B91C850050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatClient", "ConsoleChatClient\ConsoleChatClient.csproj", "{22D9A33E-907A-4926-9F83-6082ACFFF113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatHost", "ConsoleChatHost\ConsoleChatHost.csproj", "{39793BC4-6E3A-4554-8766-618F4DCF404B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +35,17 @@ Global
 		{9B66D08D-2E6F-4A0B-8892-CA974E5AF4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B66D08D-2E6F-4A0B-8892-CA974E5AF4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B66D08D-2E6F-4A0B-8892-CA974E5AF4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22D9A33E-907A-4926-9F83-6082ACFFF113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D9A33E-907A-4926-9F83-6082ACFFF113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D9A33E-907A-4926-9F83-6082ACFFF113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D9A33E-907A-4926-9F83-6082ACFFF113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39793BC4-6E3A-4554-8766-618F4DCF404B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39793BC4-6E3A-4554-8766-618F4DCF404B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39793BC4-6E3A-4554-8766-618F4DCF404B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39793BC4-6E3A-4554-8766-618F4DCF404B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22D9A33E-907A-4926-9F83-6082ACFFF113} = {3F3BB68E-27E0-4B5B-B1B5-13B91C850050}
+		{39793BC4-6E3A-4554-8766-618F4DCF404B} = {3F3BB68E-27E0-4B5B-B1B5-13B91C850050}
 	EndGlobalSection
 EndGlobal

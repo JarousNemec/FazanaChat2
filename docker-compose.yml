@@ -1,0 +1,32 @@
+﻿services:
+  database:
+    image: postgres:16
+    restart: unless-stopped
+    volumes:
+      - "database:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: fazana
+      POSTGRES_PASSWORD: Heslo1234.
+      POSTGRES_DB: chat
+    ports:
+      - "9999:5432"
+  
+  server:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./FazanaChat2.Server/Dockerfile
+    ports:
+      - "10000:8080"
+    
+  web-client:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./FazanaChat2.WebClient/Dockerfile
+    ports:
+      - "10001:8080"
+
+volumes:
+  database:
+    driver: local
